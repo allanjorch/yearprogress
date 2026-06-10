@@ -4,8 +4,6 @@ import (
 	"time"
 
 	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/inpututil"
-
 	"yearprogress/internal/core"
 )
 
@@ -36,7 +34,7 @@ func newApp(cfg core.Config) *App {
 }
 
 func (a *App) Update() error {
-	if anyKeyJustPressed() {
+	if exitKeyPressed() {
 		return ebiten.Termination
 	}
 
@@ -65,14 +63,3 @@ func (a *App) Layout(outsideWidth, outsideHeight int) (int, int) {
 	return outsideWidth, outsideHeight
 }
 
-func anyKeyJustPressed() bool {
-	if len(ebiten.AppendInputChars(nil)) > 0 {
-		return true
-	}
-	for k := ebiten.Key(0); k <= ebiten.KeyMax; k++ {
-		if inpututil.IsKeyJustPressed(k) {
-			return true
-		}
-	}
-	return false
-}

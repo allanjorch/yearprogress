@@ -1,6 +1,7 @@
 # Binaries
 /yearprogress
 /yearprogress.exe
+*.zip
 *.exe
 *.dll
 *.so

@@ -27,7 +27,7 @@ go run .          # GUI (default)
 go run . --tui    # terminal UI
 ```
 
-Press any key to exit.
+Press **Esc**, **Enter**, **Space**, **Q**, or **Backspace** to exit.
 
 ## Build
 

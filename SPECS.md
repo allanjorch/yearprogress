@@ -100,7 +100,7 @@ All calculations use the system's local timezone (`time.Now().Location()`).
 
 ### Input
 
-- Any keypress exits
+- Exit keys: Esc, Enter, Space, Q, Backspace (see `core.ExitKeys`)
 
 ### Color palette (GUI)
 
@@ -121,7 +121,7 @@ All calculations use the system's local timezone (`time.Now().Location()`).
 
 ### Input
 
-- Any keypress exits
+- Exit keys: Esc, Enter, Space, Q, Backspace (see `core.ExitKeys`)
 
 ### Update interval
 
