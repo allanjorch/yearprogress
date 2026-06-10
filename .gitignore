@@ -1,0 +1,22 @@
+# Binaries
+/yearprogress
+/yearprogress.exe
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test
+*.test
+*.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
